@@ -1,0 +1,1164 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="css/custom-styles.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+  
+     
+   <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/font-awesome-ie7.css">
+
+      <script src="js/jquery.mobilemenu.js"></script>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    
+
+    <script>
+    $(document).ready(function(){
+        $('.menu').mobileMenu();
+
+    });
+  </script>
+	
+        <meta charset="UTF-8" />
+			
+    <base href="https://www.kitapyurdu.com/" />
+
+   
+        
+    <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/reset.css" />
+    <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/960.css" />
+    <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/css-sprite.css?3.30.3.1" />
+    <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/stylesheet.css?3.30.3.1" />
+    <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/jBox.css?3.30.3.1" />
+    <link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/rating/jquery.rating.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/ui-1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/notification-popup.css?3.30.3.1" media="screen" />
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+                <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/carousel.css?3.30.3.1" media="screen" />
+            <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/slideshow.css?3.30.3.1" media="screen" />
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="catalog/view/javascript/jquery/jquery-1.8.3.min.js">\x3C/script>')</script>
+    <script type="text/javascript" src="catalog/view/javascript/jquery/ui-1.12.1/jquery-ui.min.js?3.30.3.1"></script>
+    <script type="text/javascript" src="catalog/view/javascript/jquery/tabs.js"></script>
+    <script type="text/javascript" src="catalog/view/javascript/jquery/sticky/jquery.sticky.js"></script>
+    <script type="text/javascript" src="catalog/view/javascript/jquery/jBox.min.js"></script>
+    <script type="text/javascript" src="catalog/view/javascript/jquery/rating/jquery.rating.js"></script>
+    <script type="text/javascript" src="catalog/view/javascript/common.js?3.30.3.1"></script>
+    <script type="text/javascript" src="catalog/view/javascript/jquery.tooltipster.min.js"></script>
+    <script type="text/javascript" src="catalog/view/javascript/jquery/jquery.cookie-1.4.1.min.js"></script>
+    
+
+   
+            <script type="text/javascript" src="catalog/view/javascript/jquery/jquery.readmore.js"></script>
+            <script type="text/javascript" src="catalog/view/javascript/jquery/jquery.jcarousel.min.js"></script>
+            <script type="text/javascript" src="catalog/view/javascript/jquery/nivo-slider/jquery.nivo.slider.pack.js"></script>
+    
+
+   
+
+ 
+
+
+</head>
+<body >
+<div class="container_12">
+
+	<!--<script type="text/javascript">
+
+	    $(document).ready(function () {
+
+
+		$('#down-button').show();
+		$('#top-button').hide();
+	    });
+
+
+	    $(document).ready(function () {
+		$('#down-button').click(function () {
+
+		    $('html, body').animate({scrollTop: $(document).height()}, 'slow');
+		    $('#down-button').hide();
+		    $('#top-button').show();
+		    return false;
+
+		});
+
+	    });
+
+
+
+	    $(document).ready(function () {
+		$('#top-button').click(function () {
+
+		    $('html, body').animate({scrollTop: 0}, 'slow');
+		    $('#top-button').hide();
+		    $('#down-button').show();
+		    return false;
+		});
+	    });
+	    $(document).ready(function () {
+		$('#suggest-button').mouseover(function () {
+		    jQuery('#suggest-image').addClass("sprite-button_suggest_h");
+		    jQuery('#suggest-image').removeClass("sprite-button_suggest");
+
+		}).mouseout(function () {
+		    jQuery('#suggest-image').addClass("sprite-button_suggest");
+		    jQuery('#suggest-image').removeClass("sprite-button_suggest_h");
+		});
+	    });
+	    $(window).scroll(function () {
+
+		if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+		    $('#down-button').hide();
+		    $('#top-button').show();
+		} else if ($(window).scrollTop() + $(window).height() > 100) {
+
+		    $('#down-button').show();
+		    $('#top-button').show();
+		}
+
+		if ($(window).scrollTop() == 0) {
+		    $('#down-button').show();
+		    $('#top-button').hide();
+		}
+
+	    });
+	</script>
+	<!--SUGGESTION BUTTON-->
+	<link rel='stylesheet' type='text/css' href='catalog/view/theme/default/stylesheet/tag-logos-sprite.css?3.30.3.1' />
+	<link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/magiczoom/magiczoom.css" />
+	<script type="text/javascript" src="catalog/view/javascript/jquery/magiczoom/magiczoom.js"></script>
+	<!-- En ste veya en alta inmek için buton,sağ en altta-->
+	<div id="fixedbutton">
+	    <a id="top-button">
+		<span class="tooltip sprite sprite-button_top_h"  title="En üste çık" style="border-style: none " id="top-button-image">
+	    </a>
+	    <a  id="suggest-button" onclick="showAjaxBox('https://www.kitapyurdu.com/index.php?route=information/feedback/popup');" style="margin-bottom:2px; border-style: none; ">
+		<span class="tooltip sprite sprite-button_suggest" title="Önerim Var" alt="Öneride bulun" id="suggest-image">
+
+	    </a>
+	    <a id="down-button">
+		<span class="tooltip sprite sprite-button_down_h"  title="En alta in" style="border-style: none " id="down-button-image">
+	    </a>
+	</div>
+
+	
+<!-- Olması gereken ksımı -->
+<div itemscope itemtype="http://schema.org/Book"  id="productDetail-438994">
+    <!--<div class="breadcrumb">
+		    <a href="https://www.kitapyurdu.com/index.php?route=common/home">Ana Sayfa</a>
+		     <span style="color:#000;">&raquo;</span> <a href="https://www.kitapyurdu.com/kitap/turklerin-seruveni-amp-metehandan-attilaya-fatihten-ataturke/438994.html">Türklerin Serüveni &amp; Metehan’dan Attila’ya, Fatih’ten Atatürk’e</a>
+	   </div>
+    -->
+
+    <!-- Orta ve yan kısım -->
+    <div class="product-info grid_9 alpha">
+	    	<style>
+	    	    #ad-34 img{
+	    		width: 690px;
+	    		height: 100px;
+	    	    }
+    		</style>
+    	
+    	<!-- en baştaki resim 
+    	<div class="ad-large" id="ad-34"><a href="index.php?route=ad/redirect&ad_id=668" target="_self" rel="nofollow"><img width="690" height="100"  src="https://imageserver.kitapyurdu.com/select.php?imageid=8349859&isWatermarked=99d3edc73" /></a></div>
+ 		 -->
+		
+
+	    <div class="book-cover box-shadow mg-b-20">
+
+			<!-- BEGIN LEFT COLUMN -->
+			<div class="grid_3 alpha omega book-left" style="padding-bottom: 150px;padding-top: 10px;">
+		    
+		    	<!-- Kitap resmi -->
+				<div class="image-container">
+	    			<style>.mz-hint-message:before { content: none;}</style>
+	    			<div class="image">
+	    			    <a href="https://imageserver.kitapyurdu.com/select.php?imageid=4749038&isWatermarked=true" title="Türklerin Serüveni <br /> Metehan’dan Attila’ya, Fatih’ten Atatürk’e" class="MagicZoom" id="product_image_zoom" data-options="zoomWidth:485px; zoomHeight:400px; variableZoom: true; hint: always; transitionEffect: false; textHoverZoomHint: Büyük Resim;">
+	    				<img  itemprop="image" src="https://imageserver.kitapyurdu.com/select.php?imageid=4749038&width=180&isWatermarked=true&pagecount=248" title="Türklerin Serüveni &amp; Metehan’dan Attila’ya, Fatih’ten Atatürk’e" alt="Türklerin Serüveni &amp; Metehan’dan Attila’ya, Fatih’ten Atatürk’e" id="image" />
+	    			    </a>
+	    			</div>
+	    		</div>
+		    	
+					    
+			    <div class="clear"></div>
+
+
+			    <!-- BEGIN RATING(Kitap resmi altındaki yıldızlar) -->
+			    <div class="rating text-center" id="rating-438994" style="margin-top: 5px;margin-bottom: 10px;">
+	    			<div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+	    			    <meta itemprop="ratingValue" content="5">
+	    			    <meta itemprop="ratingCount" content="926">
+	    			</div>
+				
+					<span rating="rating" class="rating rating-tooltip" style="font-size: 18px; text-indent: 2px;">
+				    <i class="fa fa-star active"></i><i class="fa fa-star active"></i><i class="fa fa-star active"></i><i class="fa fa-star active"></i><i class="fa fa-star active"></i>			</span>
+			    </div>
+			    <!-- END RATING -->
+
+
+		 
+
+    		   	 <a onclick="showAjaxBox('https://www.kitapyurdu.com/index.php?route=product/product/page_image&amp;product_id=438994', true)" alt="https://www.kitapyurdu.com/index.php?route=product/product/page_image&amp;product_id=438994">
+    			<div class="mg-b-10 attr-container">
+    			    <i class="fa fa-fw fa-book orange"></i>&nbsp;&nbsp;İç Sayfalara Gözat    	
+    			</div>
+    		    </a>
+		    
+		        <script type="text/javascript">
+	    			function videoBoxClicked()
+	    			{
+	    			    $('#tab-review').hide();
+	    			    $('#tab-webmaster').hide();
+	    			    $('#tab-video').show();
+	    			    $('html, body').animate({scrollTop: $('#tab-video').offset().top - 200}, 'slow');
+	    			}
+    			
+    			</script>
+    		    <a class="video-box" href="javascript: videoBoxClicked();">
+    			<div class="mg-b-10 attr-container" >
+    			    <i class="fa fa-fw fa-video-camera orange"></i>&nbsp;&nbsp;Videosunu İzle    
+    			</div>
+    		    </a>
+		    
+		   
+		    
+		    	<!-- Tag Logos -->
+		    
+    		    <div class="section" ></div>
+			
+					</div>
+
+				<!-- Kitap ahakkında açılama yapılan kısım -->
+				<div class="grid_6 omega alpha book-right">
+
+			    <div class="padding" style="margin-left: 10px;">
+				<h1 itemprop="name" class="product-heading">Türklerin Serüveni <br /> Metehan’dan Attila’ya, Fatih’ten Atatürk’e</h1>
+
+
+
+				<!-- BEGIN DESCRIPTION -->
+				<div class="description">
+
+				    <div class="manufacturers" >
+					<!-- MANUFACTURERS -->
+					<span>
+					    <span>
+						    					<!-- Traverse each manufacturer type & print as a row. -->
+						    
+							<!-- Traverse each manufacturer & print as comma seperated values. -->
+													<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+
+							    <a itemprop="url" href="https://www.kitapyurdu.com/yazar/prof-dr-feridun-m-emecen/309.html"><span itemprop="name">Prof. Dr. Feridun M. Emecen</span></a>
+							</span>
+
+							
+		    					<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+		    					    <a itemprop="url"  href="https://www.kitapyurdu.com/yazar/prof-dr-abdulkadir-ozcan/3455.html">
+		    						<meta itemprop="name" content="Prof. Dr. Abdülkadir Özcan" />
+								     , Prof. Dr. Abdülkadir Özcan	    					    </a>
+		    					</span>
+							
+		    					<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+		    					    <a itemprop="url"  href="https://www.kitapyurdu.com/yazar/yrd-doc-dr-ali-guler/5346.html">
+		    						<meta itemprop="name" content="Yrd. Doç. Dr Ali Güler" />
+								     , Yrd. Doç. Dr Ali Güler	    					    </a>
+		    					</span>
+							
+		    					<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+		    					    <a itemprop="url"  href="https://www.kitapyurdu.com/yazar/prof-dr-ilber-ortayli/9285.html">
+		    						<meta itemprop="name" content="Prof. Dr. İlber Ortaylı" />
+								     , Prof. Dr. İlber Ortaylı	    					    </a>
+		    					</span>
+							
+		    					<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+		    					    <a itemprop="url"  href="https://www.kitapyurdu.com/yazar/prof-dr-ahmet-tasagil/17539.html">
+		    						<meta itemprop="name" content="Prof. Dr. Ahmet Taşağıl" />
+								     , Prof. Dr. Ahmet Taşağıl	    					    </a>
+		    					</span>
+							
+		    					<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+		    					    <a itemprop="url"  href="https://www.kitapyurdu.com/yazar/prof-dr-ekrem-bugra-ekinci/24851.html">
+		    						<meta itemprop="name" content="Prof. Dr. Ekrem Buğra Ekinci" />
+								     , Prof. Dr. Ekrem Buğra Ekinci	    					    </a>
+		    					</span>
+							
+		    					<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+		    					    <a itemprop="url"  href="https://www.kitapyurdu.com/yazar/prof-dr-hasim-sahin/40568.html">
+		    						<meta itemprop="name" content="Prof. Dr. Haşim Şahin" />
+								     , Prof. Dr. Haşim Şahin	    					    </a>
+		    					</span>
+							
+		    					<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+		    					    <a itemprop="url"  href="https://www.kitapyurdu.com/yazar/cansu-canan-ozgen/185902.html">
+		    						<meta itemprop="name" content=" Cansu Canan Özgen" />
+								     ,  Cansu Canan Özgen	    					    </a>
+		    					</span>
+							
+		    					<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+		    					    <a itemprop="url"  href="https://www.kitapyurdu.com/yazar/emrah-safa-gurkan/196016.html">
+		    						<meta itemprop="name" content=" Emrah Safa Gürkan" />
+								     ,  Emrah Safa Gürkan	    					    </a>
+		    					</span>
+							
+
+							<br /><!-- End of line. -->
+						    									    </span>
+					</span>
+				    </div>
+
+
+				    <div class="publishers mg-b-10">
+					<!-- PUBLISHERS -->
+					    				<!-- TEXT REMOVED IN DESIGN SPECIFICATIONS, COMMENTED OUT -->
+
+						<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+						    <a itemprop="url" href="https://www.kitapyurdu.com/yayinevi/kronik-kitap/8343.html"><span itemprop="name">KRONİK KİTAP</span></a>
+						</span>
+					        				<br />
+								    </div>
+
+
+
+				    <div  id="description_text">
+					<span itemprop="description">Tarihin en kadim milletleri sıralansa hiç şüphe yok ki Türkler en ön safta yer alacaklardır. İzledikleri yollar, vardıkları coğrafyalar, söyledikleri şiirler, savaş stratejileri ve daha nice konularıyla Türk tarihinin kendine has birçok bilinmeyeni vardır. Tarihi ekranlar vasıtasıyla her yaşa yeniden sevdiren <strong>Cansu Canan Özgen</strong>, Türklerin izini alanında uzman tarihçilerle sürüyor.<br/>Kür Şad gerçekten yaşamış mıydı? Orhun Kitabeleri nasıl çözüldü? Attila’nın Avrupa tarihindeki yeri neydi? Cengiz Han Türk müydü? <strong>Prof. Dr. Ahmet Taşağıl anlatıyor.</strong><br/>Hasan Sabbah kimdi? Nizamülmülk ve Ömer Hayyam’la sınıf arkadaşı mıydı? Fedailer suikastları neden hançerle yapıyordu? <strong>Doç. Dr.</strong> <strong>Haşim Şahin anlatıyor</strong>.<br/>Timur, Türk müdür? Türklerde tarih anlayışı nasıldır? Türkçenin Türk devletlerindeki yeri neydi? Safeviler Türk Devleti miydi? <strong>Prof. Dr. İlber Ortaylı anlatıyor</strong>.<br/>İstanbul’un fethinde gemiler gerçekten karadan yürütüldü mü? Ulubatlı Hasan diye birisi var mıydı? Akşemseddin, Fatih’e neden bir mektup yazmıştır?  <strong>Prof. Dr. Feridun M. Emecen anlatıyor</strong>.<br/>Casuslar maaşlı elemanlar mıydı? Bugünkü manada casusluk teşkilatları var mıydı? Casuslar birbirlerini nasıl tanırlardı? Özel işaretleri ya da sembolleri var mıydı? <strong>Doç. Dr. Emrah Safa Gürkan anlatıyor.</strong><br/>Devşirme sisteminin özellikleri neydi? Padişah eşleri yönetimde etkili oldular mı? IV. Murad’ın yasaklarının sebebi neydi? Neden IV. Murad’a Şark’ın Sultanı denildi? <strong>Prof. Dr. Abdülkadir Özcan </strong>anlatıyor.<br/>Osmanlı’da ilk isyanı kim çıkarmıştır? Kardeş katlinin hükümleri nelerdi? Hanedan mensupları nasıl öldürülüyorlardı? Osmanlı’daki darbelerin genel özellikleri nelerdi? <strong>Prof. Dr. Ekrem Buğra Ekinci anlatıyor.</strong><br/>Atatürk’ün soyağacı biliniyor mu? Yaşayan akrabaları var mı? Asker olmaya nasıl karar verdi? Askerlik başarılarında tarih bilgisinin payı nedir? Atatürk’ün Çanakkale’deki rolü neydi? <strong>Doç.</strong> <strong>Dr. Ali Güler</strong> <strong>anlatıyor</strong>.<br/>Orta Asya’nın bozkırlarından Avrupa’nın kapılarına, Hunlar'dan Osmanlı'ya, Fatih'ten Atatürk'e Türk tarihinin önemli çağları, imparatorlukları ve komutanları <strong><em>Türklerin Serüveni</em></strong>'nde anlatılıyor.<br/><strong>Cansu Canan Özgen, İlber Ortaylı, Feridun Emecen, Ahmet Taşağıl, Ekrem Buğra Ekinci, Emrah Safa Gürkan, Haşim Şahin, Abdülkadir Özcan, Ali Güler</strong><br /></span>
+				    </div>
+				</div>
+				<!-- END DESCRIPTION -->
+
+
+				<br/>
+				<!-- BEGIN SHARE SOCIAL -->
+				<div class="share-buttons section">
+
+				    <!-- TWEET BUTTON -->
+				    <span class="fl">
+					<a href="https://twitter.com/share" class="twitter-share-button" data-lang="tr" data-count="none">Tweetle</a>
+				    </span>
+				    <!--  FACEBOOK LIKE BUTTON -->
+				    <span class="fb-share-button" data-href="https://www.kitapyurdu.com/kitap/turklerin-seruveni-amp-metehandan-attilaya-fatihten-ataturke/438994.html" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.kitapyurdu.com/kitap/turklerin-seruveni-amp-metehandan-attilaya-fatihten-ataturke/438994.html&src=sdkpreparse">Paylaş</a></span>
+				    <div class="clear"></div>
+				</div>
+				<!-- END SHARE SOCIAL -->
+
+
+				<div class="section">
+				    <!-- ATTRIBUTES -->
+				    <div class="grid_3 alpha omega">
+					<table class="attribute">
+
+					    
+
+
+					        				    <tr>
+							<td>Yayın Tarihi</td>
+							<td itemprop="datePublished">2018-05-16</td>
+						    </tr>
+					    
+					    										    <tr>
+							<td>ISBN</td>
+							<td>
+							    						    <span itemprop="isbn">9752430204</span>
+							</td>
+						    </tr>
+											    <tr>
+							<td>Baskı Sayısı</td>
+							<td>
+							    						    <span itemprop="bookEdition">6. Baskı</span>
+							</td>
+						    </tr>
+											    <tr>
+							<td>Dil</td>
+							<td>
+							    						    <span >TÜRKÇE</span>
+							</td>
+						    </tr>
+											    <tr>
+							<td>Sayfa Sayısı</td>
+							<td>
+							    						    <span itemprop="numberOfPages">248</span>
+							</td>
+						    </tr>
+											    <tr>
+							<td>Cilt Tipi</td>
+							<td>
+							    						    <span >Karton Kapak</span>
+							</td>
+						    </tr>
+											    <tr>
+							<td>Kağıt Cinsi</td>
+							<td>
+							    						    <span >Kitap Kağıdı</span>
+							</td>
+						    </tr>
+											    <tr>
+							<td>Boyut</td>
+							<td>
+							    						    <span >13.5 x 21 cm</span>
+							</td>
+						    </tr>
+										    				</table>
+				    </div>
+
+				    <!-- ALTERNATES -->
+				    
+				    <div class="clear"></div>
+				</div>
+
+				<!-- SPECIALITY & PURCHASED -->
+				    			<div class="grid_6 omega alpha section">
+													    Bu üründen 9920 adet satılmıştır.<br />
+					    			</div>
+				
+				<!-- CATEGORIES -->
+				    			<div class="grid_6 omega alpha section">
+					    <div><b>İlgili Kategoriler:</b></div>
+									    <a href="https://www.kitapyurdu.com/kategori/kitap-tarih-turkiye/1_41_46.html">Kitap <span style="color:#000;">&raquo;</span> Tarih <span style="color:#000;">&raquo;</span> Türkiye</a><br />
+					    			</div>
+				
+				<div class="clear"></div>
+
+				<!-- BEGIN TAGS -->
+				
+				<!-- END TAGS -->
+
+
+			    </div>
+			</div>
+
+			<div class="clear"></div>
+	    </div>
+
+	    <!-- Kitap ahakkında açılama yapılan kısım sonu -->
+
+
+	    <!-- REKLAM
+	    <div class="ad-large" id="ad-29"><a href="index.php?route=ad/redirect&ad_id=665" target="_self" rel="nofollow"><img width="690" height="100"  src="https://imageserver.kitapyurdu.com/select.php?imageid=8227772&isWatermarked=74b1da057" /></a></div>
+		
+
+	    
+
+
+
+        <div class = "box product_offer" id="product_offer" style="padding-left: 0px !important; padding-right: 0px !important;">
+			<span class="wait">&nbsp;<img src="catalog/view/theme/default/image/loading.gif" alt="" /></span>
+		    </div>
+	    
+	    REKLAM SONU
+	    -->
+
+	    <!--Kitap içeriği (ÖNSÖZ) -->
+
+	    <div class="container">
+          <div class="featured-item">
+      		<div class="col-md-6">
+              <div class="block">
+                <div class="block-title">
+                    <h1>Aliquam tincidunt</h1>
+                    <h2>Integer vitae libero ac risus egestas placerat</h2>
+                </div>
+                  <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading accordion-caret">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                            Donec quis dui at dolor tempor
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra 
+                                      ultricies in, diam. Sed arcu. Cras consequat.</div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading accordion-caret">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                            Vivamus molestie gravida turpis
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra 
+                                      ultricies in, diam. Sed arcu. Cras consequat.</div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading accordion-caret">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                            Fusce lobortis lorem at ipsum semper 
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra 
+                                      ultricies in, diam. Sed arcu. Cras consequat.</div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading accordion-caret">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                            Nam convallis pellentesque nisl
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseFour" class="panel-collapse collapse">
+                        <div class="panel-body">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra 
+                                      ultricies in, diam. Sed arcu. Cras consequat.</div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="block">
+                <div class="block-title">
+                    <h1>Aliquam tincidunt</h1>
+                    <h2>Integer vitae libero ac risus egestas placerat</h2>
+                </div>
+                  <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading accordion-caret">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                            Donec quis dui at dolor tempor
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra 
+                                      ultricies in, diam. Sed arcu. Cras consequat.</div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading accordion-caret">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                            Vivamus molestie gravida turpis
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra 
+                                      ultricies in, diam. Sed arcu. Cras consequat.</div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading accordion-caret">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                            Fusce lobortis lorem at ipsum semper 
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra 
+                                      ultricies in, diam. Sed arcu. Cras consequat.</div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading accordion-caret">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                            Nam convallis pellentesque nisl
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseFour" class="panel-collapse collapse">
+                        <div class="panel-body">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra 
+                                      ultricies in, diam. Sed arcu. Cras consequat.</div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ruler"></div>
+        </div>
+
+
+
+
+	    <!-- YORUM KSIMILARI --> 
+	    <div class="box no-padding">
+			
+			<div id="tabs" class="htabs">
+			    <a class="review" href="#tab-review">Yorumlar ()</a>
+			    <a href="#tab-webmaster">Webmaster</a>
+			    <a href="#tab-video">Video</a>
+		    	<a href="#tab-product-feedback">Hata Bildirimi</a>
+			    <a href="#tab-product-recommend">Tavsiye</a>
+			</div>
+			
+    		<div id="tab-review" class style="display:block;" >
+    		    <div id="review-form">
+    		    	
+    		    	<div class="review-reply">
+    		    		<b>Yorum Yaz</b>
+    		    		<textarea name="text" cols="20"rows="4"style="width: 99%;
+    		    		resize: none;"></textarea>
+    		    		<br>
+    		    		<span class="review-note" style="font-size: 11px;display: none;">...</span>
+    		    		<br>
+    		    		<br>
+
+    		    		<div>
+    		    			<div style="margin-top: 5px;display: inline-block;;">...</div>
+    		    			<a id="review-reply-button" name="button-send" class="button fr">Gönder</a>
+    		    			<div class="clear"></div>
+    		    		</div>
+    		    		<!-- oturum açmadıysa  ve gönder butonuna tıkladı mı uyarı ver 
+    		    		<div class="warning" style="">Yorum yazmak için
+    		    			<a class="login-open-dialog" onclick="showLoginDialog()" >oturum açın</a> "ya da"
+    		    			<a href="https://www.kitapyurdu.com/index.php?route=account/register">yeni hesap oluştur</a> "!"
+    		    			<img src="catalog/view/theme/default/image/close.png" alt style="cursor: pointer;margin-left: 5px;">
+    		    		</div>
+    		    		-->
+    		    	</div>
+
+
+    		    </div>
+    		    
+    		  <!-- yorum yapanlar burda listelnecek-->
+    		    <div id="review-list">
+    		    	<div class="review-list" itemscope itemtype="https://schema.org/Review">
+    		    		<div class="grid_2">
+    		    			<div class="mg-b-2" style="padding: 10px;width: 40px;margin: 0 auto;">
+    		    				<img src="https://imageserver.kitapyurdu.com/select.php?imageid=&width=40&isWatermarked=3fcd03177&image_type_id=11">
+    		    			</div>
+    		    			<div class="grid_6" style="float: right;">
+    		    				<div itemprop="description" class="review-text">
+    		    					fewfegerg
+    		    				</div>
+    		    				<div class="rating-buttons" id="rating-buttons-2297979">
+    		    					<div class="rating-buttons-question">Bu yrouma katılıyın mu</div>
+    		    					<span class="agree">
+    		    						<span class="sprite sprite-button-agree" title="Evet"
+    		    						>EVET(0)</span>
+    		    					</span>
+    		    					<span class="disagree">
+    		    						<span class="sprite sprite-button-disagree" title="Hayır"
+    		    						>Hayır(0)</span>
+    		    					</span>
+    		    					<span class="write-reply">
+    		    						<span class="sprite sprite-button-write-reply" title="Yanıtla"
+    		    						>Hayır(0)</span>
+    		    					</span>
+    		    				</div>
+    		    			</div>
+    		    		</div>
+
+
+    		    	 </div>
+    		    </div>
+    		    	<!-- yorum yapanlar burda listelnecek ,son-->
+    			</div>
+				<!-- END REVIEW TAB -->
+
+				<!-- BEGIN WEBMASTER TAB 
+				    <div id="tab-webmaster" class="tab-content">
+					Bu kitaba link vermek için alttaki html kodu web sayfanıza koyabilirsiniz;<br><br>
+					&lt;a href="https://www.kitapyurdu.com/kitap/turklerin-seruveni-amp-metehandan-attilaya-fatihten-ataturke/438994.html"&gt; &lt;img src="https://imageserver.kitapyurdu.com/select.php?imageid=4749038&width=85&isWatermarked=true"  alt="www.kitapyurdu.com'dan satın al" border=0&gt;&lt;/a&gt; 
+					</div>
+				END WEBMASTER TAB -->
+
+
+			<!-- BEGIN VIDEO TAB -->
+	    	<div id="tab-video" class ="padding">
+				<iframe class="youtube-player" type="text/html"
+	                width="678" height="382"
+	                sandbox="allow-scripts allow-same-origin" src="https://www.youtube.com/	embed/_VIJUbuQrZs?rel=0&controls=0&showinfo=0" frameborder="0">
+         	</iframe>    		
+	         </div>
+			<!-- END VIDEO TAB -->
+	    </div>
+	    <!-- YORUM KSIMILARI  SONU -->
+    </div>
+
+    <!-- SAĞ TARAF -->
+    <div class="product-info grid_3 omega">
+
+		<!-- Sağ üst köşe -->
+    	<div class=" slideshow product-detail-category-carousel-container">
+    	    <div id="productcategorycarousel" class="product-detail-category-carousel nivoSlider">
+				<a href="https://www.kitapyurdu.com/index.php?route=product/publisher_products/all&publisher_id=9172&sort=purchased_365&order=DESC&filter_in_stock=1" target="_self">
+	    		    <img width="210" height="100"   data-transition="fade" src="https://imageserver.kitapyurdu.com/select.php?imageid=6430961&width=210&isWatermarked=f50b95d0b" />
+	    		</a>
+    			<a href="https://www.kitapyurdu.com/index.php?route=product/best_sellers&sort=p.price&order=DESC&list_id=999&filter_in_stock=1&filter_in_stock=1&limit=100" target="_self">
+	    		    <img width="210" height="100"   data-transition="fade" src="https://imageserver.kitapyurdu.com/select.php?imageid=6430962&width=210&isWatermarked=978979357" />
+	    		</a>
+
+			    			    	    
+    	    </div>
+    	<!-- Sağ üst köşe son-->
+    	</div>
+	    
+		<script type="text/javascript">
+			$(document).ready(function () {
+			    $('#productcategorycarousel').nivoSlider({
+				directionNavHide: false,
+				animSpeed: 500, // Slide transition speed
+				pauseTime: 15000, // How long each slide will show
+				effect: 'boxRandom',
+				afterLoad: function () {
+				    $('.nivo-prevNav').html('');
+				    $('.nivo-nextNav').html('');
+				}
+			    });
+			});
+		</script>
+		
+
+		<div class="clear"></div>
+
+		<!-- yan kısmın üst tarafı -->
+		<div  class="price-sales column-box 	box-shadow mg-b-20" >
+		   
+		    <div class="additional-info">
+			
+		    	<p>MANSUR EMİN KAYA</p>
+		    	<p>MANSUR EMİN KAYA</p>
+		    	<p>MANSUR EMİN KAYA</p>
+		    	<p>MANSUR EMİN KAYA</p>
+		    	<p>Mansuer</p>
+		  
+			</div>
+		<!-- yan kısmın üst tarafı SON -->
+	</div>
+
+ </div>  	
+   
+
+<script type="text/javascript"><!--
+
+    // ADD TO CART AND BUY NOW MODIFIED FOR IE 7
+    //data: $('.product-info input[type=\'text\'], .product-info input[type=\'hidden\'], .product-info input[type=\'radio\']:checked, .product-info input[type=\'checkbox\']:checked, .product-info select, .product-info textarea'),
+    var product_id = 438994;
+    var quantity = 1;
+    var filter_points_catalog = "false";
+
+    $('#button-notice-me-product').bind('click', function () {
+	$.ajax({
+	    url: 'index.php?route=account/notification/noticeProduct',
+	    type: 'post',
+	    data: 'product_id=' + product_id,
+	    dataType: 'json',
+	    beforeSend: function () {
+		$('#button-notice-me-product').parent().after('<span class="wait">&nbsp;<img src="catalog/view/theme/default/image/loading.gif" alt="" /></span>');
+	    },
+	    complete: function () {
+		$('.wait').remove();
+	    },
+	    success: function (json) {
+		$('#notification .success, #notification .warning, #notification .attention, #notification information, #notification .error').remove();
+
+		if (json['reload']) {
+		    location.reload();
+		} else if (json['warning']) {
+		    $('#notification').html('<div class="warning" style="display: none;">' + json['warning'] + '<img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>');
+		    $('.warning').fadeIn('slow');
+		} else // if (json['success'])
+		{
+		    $('#notification').html('<div class="success" style="display: none;">' + json['success'] + '<img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>');
+		    $('.success').fadeIn('slow');
+
+		    // update noticed product count (header.tpl)
+		    $('#notification-total').html(json['text_notification_list_info']);
+		}
+	    },
+	    error: function (xhr, ajaxOptions, thrownError) {
+		console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+	    }
+	});
+    });
+
+    //--></script>
+<script type="text/javascript"><!--
+    var isLoading = false;
+
+    $('#button-cart').bind('click', function () {
+	addToCart(product_id, quantity, filter_points_catalog);
+    });
+    //--></script>
+
+<!--// FIRST VISITOR CAMPAIGN -->
+<script type="text/javascript"><!--
+    $('#button-first-visitor-campaign').bind('click', function () {
+	$.ajax({
+	    url: 'index.php?route=checkout/cart/add',
+	    type: 'post',
+	    data: 'product_id=' + product_id + '&quantity=' + quantity + '&filter_points_catalog=' + filter_points_catalog,
+	    dataType: 'json',
+	    beforeSend: function () {
+		$('#button-cart').next().after('<span class="wait">&nbsp;<img src="catalog/view/theme/default/image/loading.gif" alt="" /></span>');
+	    },
+	    complete: function () {
+		$('.wait').remove();
+	    },
+	    success: function (json) {
+		$('.success, .warning, .attention, information, .error').remove();
+
+		if (json['error'])
+		{
+		    $('#notification').html('<div class="warning" style="display: none;">' + json['error']
+			    + '<img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>');
+		    $('.warning').fadeIn('slow');
+		}
+
+		if (json['success']) {
+		    $('#notification').html('<div class="success" style="display: none;">' + json['success'] + '<img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>');
+
+		    $('.success').fadeIn('slow');
+
+		    $('#cart-total').html(json['total']);
+		    $('#cart-items').html(json['count']);
+		}
+	    },
+	    error: function (xhr, ajaxOptions, thrownError) {
+		console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+	    }
+	});
+    });
+    //--></script>
+
+<script type="text/javascript"><!--
+
+    //JQUERY: product feedback form load
+    $('#product-feedback-form').load('index.php?route=product/feedback&product_id=438994');
+
+    //JQUERY: product recommend form load
+    $('#product-recommend-form').load('index.php?route=product/recommend&product_id=438994');
+    //--></script>
+
+<script type="text/javascript"><!--
+
+    var request;
+
+    $('#review-list .pagination a').live('click', function () {
+	//$('#review-list').fadeOut('slow');
+
+	$('#review-list').load(this.href);
+
+	//$('#review-list').fadeIn('slow');
+
+	return false;
+    });
+
+    $('#review-list').load('index.php?route=product/product/review&product_id=438994');
+    $('#review-form').load('index.php?route=product/product/writeReview&product_id=438994');
+
+        // Load DIV product offer asynchronously.
+        $.ajax({
+    	url: 'index.php?route=product/product_offer/index&product_id=438994',
+    	dataType: 'html',
+    	complete: function () {
+    	    $('#product_offer .wait').remove();
+    	},
+    	success: function (html) {
+
+    	    if (html.length > 1)
+    	    {
+    		$('#product_offer').html(html);
+    	    } else
+    	    {
+    		$('#product_offer').remove();
+    	    }
+    	},
+    	error: function (xhr, ajaxOptions, thrownError) {
+    	    console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+    	}
+        });
+
+    // Load DIV product related asynchronously.
+    var ajaxCall = $.ajax({
+	url: 'index.php?route=product/product_related/index&product_id=438994',
+	dataType: 'html',
+	complete: function () {
+	    $('#product_related .wait').remove();
+	},
+	success: function (html) {
+	    if (html) {
+		$('#product_related').removeClass('box');
+		$('#product_related').html(html);
+		updateProductViews();
+	    } else
+	    {
+		$('#product_related').remove();
+	    }
+	},
+	error: function (xhr, ajaxOptions, thrownError) {
+	    console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+	}
+    });
+
+    //--></script>
+<script type="text/javascript"><!--
+    $('#tabs a').tabs();//-->
+</script>
+<script type="text/javascript">
+    !function (d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (!d.getElementById(id)) {
+	    js = d.createElement(s);
+	    js.id = id;
+	    js.src = "//platform.twitter.com/widgets.js";
+	    fjs.parentNode.insertBefore(js, fjs);
+	}
+    }(document, "script", "twitter-wjs");</script>
+
+
+
+<script>(function (d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id))
+	    return;
+	js = d.createElement(s);
+	js.id = id;
+	js.src = "//connect.facebook.net/tr_TR/sdk.js#xfbml=1&version=v2.9";
+	fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+    $(function () {
+	$('#description_text').readmore({
+	    moreLink: '(<a href="#">devamını oku</a>)',
+	    lessLink: '(<a href="#">gizle</a>)'
+	});
+    });
+</script>
+<script type="text/javascript">
+    $(function () {
+	$('#format-accordion a').click(function (e) { 	    //Close all <div> but the <div> right after the clicked <a>
+	    $(e.target).next('div').siblings('.section-content').slideUp('fast');
+	    //Remove all active classes but the clicked <a>
+	    $(e.target).siblings('a').removeClass('active');
+	    //Toggle open/close on the <div> after the <a>, opening it if not open. 	    //$(e.target).next('div').slideToggle('fast');
+	    //$(e.target).toggleClass('active');
+
+	    if ($(e.target).hasClass('active')) {
+		$(e.target).removeClass('active');
+		$(e.target).next('div').slideUp('fast');
+	    } else {
+		$(e.target).addClass('active');
+
+		var $content_div = $(e.target).next('div');
+
+		$content_div.slideDown('fast');
+
+		// check if already loaded
+		if ($content_div.find('.product-alternate').length == 0) {
+		    var relation_id = $content_div.attr('id').replace('product-relation-', '');
+		    if (!request) // Only send the AJAX request if there's no current AJAX request
+		    {
+			// AJAX request.
+			request = $.ajax(
+				{
+				    url: 'index.php?route=product/product/alternative&product_id=438994&product_relation_id=' + relation_id, dataType: 'html',
+				    beforeSend: function ()
+				    {
+					$content_div.html(getWaitView());
+				    },
+				    complete: function ()
+				    {
+					$content_div.find('.wait').remove();
+					request = null; // Request is finished.
+				    },
+				    success: function (html)
+				    {
+					$content_div.html(html);
+				    },
+				    error: function (xhr, ajaxOptions, thrownError)
+				    {
+					console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+				    }
+				});
+
+		    }
+		}
+	    }
+	});
+    });
+</script>
+<script type="text/javascript">
+    (function ($) {
+	$.fn.attrGenerator = function () {
+	    return this.each(function () {
+		var $this = $(this);
+
+		if (!$this.hasClass('small')) {
+
+		    $this.wrapInner('<span class="middle"><span class="text"></span></span>');
+		    $this.children('.middle').before('<span class="before"></span>');
+		    $this.children('.middle').after('<span class="after"></span>');
+
+		    $this.children('.before').css('background', 'url(catalog/view/theme/default/image/attr-left-border.png) no-repeat');
+		    $this.children('.middle').css('background', 'url(catalog/view/theme/default/image/attr-bg.png) repeat-x');
+		    $this.children('.after').css('background', 'url(catalog/view/theme/default/image/attr-right-border.png) no-repeat');
+		}
+	    });
+
+	};
+    })(jQuery)
+
+    $('.attr-container').attrGenerator();
+</script>
+
+<!-- JQUERY: manufacturer info load event -->
+<script type="text/javascript"><!--
+
+    $.ajax(
+	    {url: 'index.php?route=product/manufacturer/manufacturer_about&product_id=438994',
+		dataType: 'html',
+		complete: function ()
+		{
+		    $('#manufacturer-about .wait').remove();
+		},
+		success: function (html)
+		{
+		    if (html)
+		    {
+			$('#manufacturer-about').html(html);
+		    } else
+		    {
+			$('#manufacturer-about').remove();
+		    }
+		},
+		error: function (xhr, ajaxOptions, thrownError)
+		{
+		    console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+		}
+	    });
+    //--></script>
+
+<!-- JQUERY: review sort selection change event listener -->
+<script type="text/javascript"><!--
+    $('#review-sort-selection').bind('change', function ()
+    {
+	if (!request) // Only send the AJAX request if there's no current AJAX request
+	{
+	    var tokens = this.value.split('-');
+	    var filter;
+	    if ($('#review-filter-purchase').is(':checked')) {
+		filter = '1';
+	    } else {
+		filter = '0';
+	    }
+
+	    // AJAX request.
+	    request = $.ajax(
+		    {
+			url: 'index.php?route=product/product/review&product_id=438994&sort=' + tokens[0] + '&order=' + tokens[1] + '&filter_purchase=' + filter,
+			dataType: 'html',
+			beforeSend: function ()
+			{
+			    $('#review-list').html(getWaitView());
+			}, complete: function ()
+			{
+			    $('#review-list .wait').remove();
+			    request = null; // Request is finished.
+			},
+			success: function (html)
+			{
+			    $('#review-list').html(html);
+			    $('#review-list .review-list').fadeIn('slow');
+			},
+			error: function (xhr, ajaxOptions, thrownError)
+			{
+			    console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+			}
+		    });
+	}
+    }
+    );
+    $('#review-filter-purchase').bind('click', function ()
+    {
+	if (!request) // Only send the AJAX request if there's no current AJAX request
+	{
+	    var tokens = $('#review-sort-selection').val().split('-');
+	    var filter;
+	    if ($(this).is(':checked')) {
+		filter = '1';
+	    } else {
+		filter = '0';
+	    }
+
+	    // AJAX request.
+	    request = $.ajax(
+		    {
+			url: 'index.php?route=product/product/review&product_id=438994&sort=' + tokens[0] + '&order=' + tokens[1] + '&filter_purchase=' + filter,
+			dataType: 'html',
+			beforeSend: function ()
+			{
+			    $('#review-list').html(getWaitView());
+			}, complete: function ()
+			{
+			    $('#review-list .wait').remove();
+			    request = null; // Request is finished.
+			},
+			success: function (html)
+			{
+			    $('#review-list').html(html);
+			    $('#review-list .review-list').fadeIn('slow');
+			},
+			error: function (xhr, ajaxOptions, thrownError)
+			{
+			    console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+			}
+		    });
+	}
+
+    });
+    //--></script>
+
+<script type="text/javascript">
+    $('.tooltip').jBox('Tooltip', {
+	getContent: 'title',
+	position: {
+	    x: 'right',
+	    y: 'center'
+	},
+	outside: 'x'
+    });
+
+    $('.colorbox').jBox('Image');
+
+</script>
+
+<script type="text/javascript">
+    $('.tooltip-left').jBox('Tooltip', {
+	getContent: 'title',
+	position: {
+	    x: 'left',
+	    y: 'center'
+	},
+	outside: 'x'
+    });
+
+    $('.colorbox').jBox('Image');
+
+</script>
+
+<!--END CONTENT-->
+</div>
+</body>
+</html>
+
+

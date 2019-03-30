@@ -144,7 +144,7 @@ p{padding-bottom: 25px; margin: 0;}
     .banner .carousel-caption h1{ opacity: 0;}
     .banner .carousel-caption h2{ opacity: 0;}
     .banner .carousel-caption .btn{opacity: 0;}
-    .banner .carousel-inner:hover img{-webkit-filter: blur(5px); transition:all 5s; }
+    .banner .carousel-inner:hover img{ transition:all 5s; }
     .banner .carousel-inner:hover h1{ transition:all 1s; opacity: 0.9 !important;  }
     .banner .carousel-inner:hover h2{ transition:all 1s; opacity: 0.9 !important;  }
     .banner .carousel-inner:hover .btn{ transition:all 1s; opacity: 0.9 !important;  }
