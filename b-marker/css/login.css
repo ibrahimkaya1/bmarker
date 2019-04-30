@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 html,body{
-background-image: url('/b-marker/img/img13.webp');
+background-image: url("../img/img13.webp");
 
 background-size: cover;
 background-repeat: no-repeat;
