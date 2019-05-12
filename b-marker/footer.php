@@ -15,6 +15,7 @@
                 </thead>
                 <tbody>
                   <tr>
+
                   <?php 
                   $srg=mysqli_query($baglan,"select*from icerikBilgisi");
                   while ($s=mysqli_fetch_assoc($srg)) {
@@ -38,6 +39,14 @@
                   ?>
                   </tr>
                   <!--
+
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>1 dk önce</td>
+                  </tr>
+
                   <tr>
                     <th scope="row">2</th>
                     <td>Jacob</td>
@@ -51,7 +60,11 @@
                     <td>the Bird</td>
                     <td>@twitter</td>
                     <td>15dk önce</td>
+
                   </tr>-->
+
+                  </tr>
+
                 </tbody>
               </table>
   

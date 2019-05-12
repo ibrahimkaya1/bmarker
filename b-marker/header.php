@@ -17,6 +17,7 @@
               <li><a href="#">Hakkımızda</a></li>
               <li><a href="#">Bize Ulaşın</a></li>
 			  <!-- Php ile kontrol edilecek giriş yaptıysa Kayıt Ol ve Giriş Yap butonları Kaldırılacak-->
+
 			   
 			  <li><a href="register.php">Kayıt Ol</a></li>
 
@@ -27,9 +28,17 @@
                /* if(isset($_COOKIE["hatirlaBeni"])){
                   echo '<li><a href="cikis.php">Çıkış Yap</a></li>'.'<br>';
                 }*/
+
                  echo '<li><a href="cikis.php">Çıkış Yap</a></li>'.'<br>';
               }else{
                 echo '<li><a href="login.php">Giriş Yap</a></li>'.'<br>';
+
+                  echo '<li><a href="#">'.$_SESSION["username"].'   <i class="fas fa-user"></i></a></li>';
+                  echo '<li><a href="cikis.php">Çıkış Yap</a></li>';
+              }else{
+                echo '<li><a href="register.php">Kayıt Ol</a></li>';
+                echo '<li><a href="login.php">Giriş Yap</a></li>';
+
               }
 
             ?>

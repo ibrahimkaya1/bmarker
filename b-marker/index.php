@@ -16,11 +16,10 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/component.css">
     <link rel="stylesheet" href="css/custom-styles.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	
      
 	<link rel="stylesheet" href="css/demo.css">
-    <link rel="stylesheet" href="css/font-awesome-ie7.css">
 
       <script src="js/jquery.mobilemenu.js"></script>
       <script src="js/html5shiv.js"></script>
@@ -82,32 +81,16 @@
 	  <div class="site-name"><h3>En Çok Okunanlar</h3></div>
         <!-- Example row of columns -->
         <div class="row">
-          <?php 
-          //SELECT DegerlendirilenIcerikID,puan,kimDegerlendirdiID,id, SUM(puan) AS puanToplami FROM icerik_degerlendirme GROUP BY DegerlendirilenIcerikID HAVING puan > 0
-            $srg=mysqli_query($baglan,"SELECT DegerlendirilenIcerikID,puan,kimDegerlendirdiID,id, SUM(puan) AS puanToplami FROM icerik_degerlendirme GROUP BY DegerlendirilenIcerikID HAVING puan > 0");
-
-            while ($s=mysqli_fetch_assoc($srg)) {
-              $srg2=mysqli_query($baglan,"select *from icerikYayinla where id=".$s["DegerlendirilenIcerikID"]."");
-              while ($s1=mysqli_fetch_assoc($srg2)) {
-                 
-                  echo ' <div class="col-md-2">
-                        <div class="block">
-                        <div class="thumbnail">
-                          <img src="img/avatar.png" alt="" class="img-responsive">
-                          <div class="caption">
-                            <h1>'.$s1["icerikAdi"].'</h1>
-                            <p>'.$s1["konu"].'</p>
-                            <a class="btn" style="background-color:yellow;"href="kitapIcerigi.php?id='.$s1["id"].'">more</a>
-                          </div>
-                          </div>
-                        </div>
-                      </div>';  
-               }
-            }
-
-
-          ?>
-            <!--
+          <div class="col-md-2">
+            <div class="block">
+            <div class="thumbnail">
+              <img src="img/img8.jpg" alt="" class="img-responsive">
+              <div class="caption">
+                <h1>Lorem ipsum tan</h1>
+              </div>
+              </div>
+            </div>
+            </div>
             <div class="col-md-2">
               <div class="block">
                 <div class="thumbnail">
@@ -157,7 +140,7 @@
               </div>
               </div>
             </div>
-            </div>-->
+            </div>
             
           </div>
           
@@ -243,33 +226,18 @@
 	  <div class="site-name"><h3>Takip Edilenler</h3></div>
         <!-- Example row of columns -->
         <div class="row">
-          <?php 
-
-          $srg=mysqli_query($baglan,"select*from icerik_degerlendirme");
-          while ($s=mysqli_fetch_assoc($srg)) {
-            $srg2=mysqli_query($baglan,"select *from icerikYayinla where id=".$s["DegerlendirilenIcerikID"]."");
-            while ($s1=mysqli_fetch_assoc($srg2)) {
-              
-            
-            echo ' <div class="col-md-3">
-                  <div class="block">
-                  <div class="thumbnail">
-                    <img src="img/avatar.png" alt="" class="img-responsive">
-                    <div class="caption">
-                      <h1>'.$s1["icerikAdi"].'</h1>
-                      <p>'.$s1["konu"].'</p>
-                      <a class="btn" style="background-color:yellow;"href="kitapIcerigi.php?id='.$s1["id"].'">More</a>
-                    </div>
-                    </div>
-                  </div>
-                </div>';  
-            }
-          }
-
-
-          ?>
-         
-            <!--
+          <div class="col-md-3">
+            <div class="block">
+            <div class="thumbnail">
+              <img src="img/img1.jpg" alt="" class="img-responsive">
+              <div class="caption">
+                <h1>Lorem ipsum tan</h1>
+                <p>Cuibstui ipsum dolor sit amet, consectetuer adipiscing eli onec odio cuisque volutpat mattis</p>
+                <a class="btn" href="#">more</a>
+              </div>
+              </div>
+            </div>
+            </div>
             <div class="col-md-3">
               <div class="block">
                 <div class="thumbnail">
@@ -305,7 +273,7 @@
               </div>
               </div>
             </div>
-            </div>-->
+            </div>
             
           </div>
           
@@ -314,7 +282,7 @@
         </div>
   
       <?php include("footer.php"); ?>
-
+s
 
 
     <script src="js/jquery-1.9.1.js"></script>
