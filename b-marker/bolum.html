@@ -21,66 +21,22 @@
   <link rel="stylesheet" href="css/demo.css">
   <link rel="stylesheet" href="css/font-awesome-ie7.css">
 
-  <script src="js/jquery.mobilemenu.js"></script>
+  <script src="js/jquery-3.4.0.min.js"></script>
   <script src="js/html5shiv.js"></script>
   <script src="js/respond.min.js"></script>
-  <script>
+  <script type="text/javascript">
     $(document).ready(function () {
-      $('.menu').mobileMenu();
+      $('ul').click(function(){
+        $('ul').toggleClass('active')
+        $('body').toggleClass('dark')
+        $('.icerik').toggleClass('dark')
+      });
     });
   </script>
 
 </head>
 
 <body>
-  <div class="header-wrapper">
-    <div class="site-name">
-      <h1>b-marker</h1>
-    </div>
-  </div>
-  <div class="menu">
-    <div class="navbar">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <i class="fw-icon-th-list"></i>
-          </button>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Anasayfa</a></li>
-            <!-- Php kısmında giriş kontrolu yapılacak yaz ve bildirimler giriş yapıldıysa gösterilecek-->
-            <li><a href="#">Yaz</a></li>
-            <li><a href="#">Bildirimler</a></li>
-            <li><a href="#">Güzel Söz</a></li>
-            <li><a href="#">Hakkımızda</a></li>
-            <li><a href="#">Bize Ulaşın</a></li>
-            <!-- Php ile kontrol edilecek giriş yaptıysa Kayıt Ol ve Giriş Yap butonları Kaldırılacak-->
-
-            <li><a href="register.php">Kayıt Ol</a></li>
-            <li><a href="login.php">Giriş Yap</a></li>
-          </ul>
-        </div>
-        <!--/.navbar-collapse -->
-      </div>
-    </div>
-
-    <div class="mini-menu">
-      <label>
-        <select class="selectnav">
-          <option value="#" selected="">Home</option>
-          <option value="#">About</option>
-          <option value="#">→ Another action</option>
-          <option value="#">→ Something else here</option>
-          <option value="#">→ Another action</option>
-          <option value="#">→ Something else here</option>
-          <option value="#">Services</option>
-          <option value="#">Work</option>
-          <option value="#">Contact</option>
-        </select>
-      </label>
-    </div>
-  </div>
 
 
   <!-- ANA KAPSAYICI OLAN CONTEINER KSIMI-->
@@ -103,9 +59,15 @@
             <a href="#">Sonraki Bölüm</a>
           </div>
         </div>
-        
-        <h3 style="padding: 15px;">Bölüm Adı</h3>
+        <ul class="darktoggle">
+            <li>
+              <span>Dark</span>
+              <span>Light</span>
+            </li>
+          </ul>
+        <h3 style="padding: 15px;">Bölüm Adı</h3> 
 
+<section>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper nibh sed gravida tristique.
           Aenean vestibulum, massa sit amet ultricies ullamcorper, erat eros viverra urna, nec aliquet dolor nisl a
           sapien. Duis auctor porttitor arcu. Morbi scelerisque quam tortor, ut vehicula lectus pretium eu. Donec
@@ -171,7 +133,7 @@
           consequat est. Quisque libero dolor, sodales vitae ullamcorper eu, porttitor hendrerit purus. Cras
           malesuada laoreet metus tempus laoreet. Donec malesuada id elit at rutrum. Class aptent taciti sociosqu ad
           litora torquent per conubia nostra, per inceptos himenaeos. Ut nec accumsan elit.</p>
-
+        </section>
           <div class="row m-15-bot">
               <div class="col-lg-4 col-sm-4 col-xs-4" align="left">
                 <a href="#">Önceki Bölüm</a>
@@ -225,22 +187,4 @@
   <!-- YORUM YAPANLARIN GÖZÜKECEĞİ YER -->
 
   </div>
-  <div class="footer-wrapper">
-    <div class="copy-rights">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-md-6">
-            Copyright(c) website name. Designed by: <a href="about_us.php"> Owls</a>
-          </div>
-          <div class="col-md-6">
-            Images from: <a href="http://www.wallpaperswide.com">http://wallpaperswide.com</a> / <a
-              href="http://www.wallcoo.net"> www.wallcoo.net</a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
 </body>
