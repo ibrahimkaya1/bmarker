@@ -22,25 +22,25 @@
 				</div>
 			</div>
 			<div class="card-body">
-				<form>
+				<form method="post" action="uyeGiris.php">
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="text" class="form-control" placeholder="Kullanıcı Adı">
+						<input type="text" name="username" class="form-control" placeholder="Kullanıcı Adı">
 						
 					</div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input type="password" class="form-control" placeholder="Şifre">
+						<input type="password" name="sifre" class="form-control" placeholder="Şifre">
 					</div>
 					<div class="row align-items-center remember">
-						<input type="checkbox">Beni Hatırla
+						<input  name="beniHatirla" type="checkbox">Beni Hatırla
 					</div>
 					<div class="form-group">
-						<input type="submit" value="Giriş Yap" class="btn float-right login_btn">
+						<input type="submit" value="Giriş Yap" name="Giris" class="btn float-right login_btn">
 					</div>
 				</form>
 			</div>

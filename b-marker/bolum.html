@@ -26,8 +26,8 @@
   <script src="js/respond.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
-      $('ul').click(function(){
-        $('ul').toggleClass('active')
+      $('#darktoggle').click(function(){
+        $('#darktoggle').toggleClass('active')
         $('body').toggleClass('dark')
         $('.icerik').toggleClass('dark')
       });
@@ -59,7 +59,7 @@
             <a href="#">Sonraki Bölüm</a>
           </div>
         </div>
-        <ul class="darktoggle">
+        <ul id="darktoggle">
             <li>
               <span>Dark</span>
               <span>Light</span>
